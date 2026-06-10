@@ -19,7 +19,7 @@
 
     /* NAV */
     nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(250,247,242,0.96); backdrop-filter:blur(8px); border-bottom:1px solid var(--gold-lt); padding:0 1.5rem; height:64px; display:flex; align-items:center; justify-content:space-between; }
-    .nav-logo img { height:38px; width:auto; display:block; }
+    .nav-logo img { height:38px; width:auto; display:block; filter:brightness(0) saturate(100%); }
     .nav-links { display:flex; gap:2rem; list-style:none; }
     .nav-links a { font-size:0.72rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--charcoal); text-decoration:none; transition:color 0.2s; }
     .nav-links a:hover, .nav-links a.active { color:var(--gold); }
@@ -170,7 +170,6 @@
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-inner">
-    <img src="images/logo-transparent.png" alt="Elevated Beauty" class="hero-logo" />
     <p class="hero-eyebrow">Newtownards, Northern Ireland</p>
     <h1 class="hero-title">Beauty <em>elevated</em><br>to an art form</h1>
     <p class="hero-sub">Luxury PMU, brows &amp; lashes by specialist artists Eve McClements and Ellie Meek.</p>
@@ -193,10 +192,10 @@
         <img src="images/eve-portrait.jpg" alt="Eve McClements – PMU Specialist" class="artist-photo" />
         <div class="artist-card-body">
           <h3 class="artist-name">Eve McClements</h3>
-          <p class="artist-role">PMU Specialist</p>
+          <p class="artist-role">PMU &amp; Brow Specialist</p>
           <p class="artist-desc">Eve's meticulous eye for symmetry and form has made her one of Northern Ireland's most sought-after permanent makeup artists.</p>
           <ul class="artist-services">
-            <li>Microblading</li><li>Ombre &amp; Powder Brows</li><li>Combination Brows</li><li>Lip Blush</li><li>Eyeliner PMU</li>
+            <li>Combination Brows</li><li>Powder Brows</li><li>Lamination Brows</li><li>HD Brows</li><li>Lash Lift &amp; Tint</li>
           </ul>
           <a href="https://elevatedbyeve.gettimely.com" target="_blank" rel="noopener" class="btn-primary">Book with Eve</a>
         </div>
@@ -205,10 +204,10 @@
         <img src="images/ellie-portrait.jpg" alt="Ellie Meek – Lash & Brow Specialist" class="artist-photo" />
         <div class="artist-card-body">
           <h3 class="artist-name">Ellie Meek</h3>
-          <p class="artist-role">Lash &amp; Brow Specialist</p>
+          <p class="artist-role">Lip Blush &amp; Lash Specialist</p>
           <p class="artist-desc">Ellie transforms lashes and brows with precision and artistry, creating looks that enhance natural beauty with lasting effect.</p>
           <ul class="artist-services">
-            <li>Classic Lash Extensions</li><li>Hybrid &amp; Volume Lashes</li><li>Lash Lift &amp; Tint</li><li>Brow Lamination</li><li>Brow Sculpt &amp; Tint</li>
+            <li>Lip Blush</li><li>Hybrid &amp; Volume Lashes</li><li>Lash Lift &amp; Tint</li><li>HD Brows</li><li>Lamination Brows</li>
           </ul>
           <a href="https://elevatedbyellie.setmore.com" target="_blank" rel="noopener" class="btn-primary">Book with Ellie</a>
         </div>
@@ -225,8 +224,8 @@
       <div class="service-overlay"><p class="service-tag">Eve McClements</p><h3 class="service-name">Permanent Makeup</h3></div>
     </div>
     <div class="service-card reveal">
-      <img src="images/brows.jpg" alt="Brow Lamination" loading="lazy" />
-      <div class="service-overlay"><p class="service-tag">Ellie Meek</p><h3 class="service-name">Brow Lamination</h3></div>
+      <img src="images/combo-brows.jpg" alt="Brows" loading="lazy" />
+      <div class="service-overlay"><p class="service-tag">Eve &amp; Ellie</p><h3 class="service-name">Brows</h3></div>
     </div>
     <div class="service-card reveal">
       <img src="images/lashes.jpg" alt="Lash Extensions" loading="lazy" />
