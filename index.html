@@ -8,11 +8,15 @@
   <meta name="keywords" content="elevated beauty, elevated beauty NI, PMU Newtownards, permanent makeup Northern Ireland, brow specialist NI, lash extensions Newtownards, lip blush NI, microblading Northern Ireland, brow lamination NI" />
   <meta name="author" content="Elevated Beauty NI" />
   <link rel="canonical" href="https://www.elevatedbeautyni.co.uk/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png" />
+  <link rel="preload" as="image" href="images/hero.jpg" />
   <!-- Open Graph -->
   <meta property="og:title" content="Elevated Beauty NI | PMU, Brows & Lashes" />
   <meta property="og:description" content="Luxury permanent makeup, brows and lashes in Newtownards, Northern Ireland." />
   <meta property="og:url" content="https://www.elevatedbeautyni.co.uk/" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Elevated Beauty NI" />
   <meta property="og:image" content="https://www.elevatedbeautyni.co.uk/images/eve-ellie.jpg" />
   <!-- Schema Local Business -->
   <script type="application/ld+json">
@@ -21,6 +25,7 @@
     "@type": "BeautySalon",
     "name": "Elevated Beauty NI",
     "url": "https://www.elevatedbeautyni.co.uk",
+    "image": "https://www.elevatedbeautyni.co.uk/images/hero.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "11a South St",
@@ -29,6 +34,12 @@
       "addressCountry": "GB"
     },
     "email": "elevatedbeauty2024@gmail.com",
+    "telephone": "+447787218595",
+    "sameAs": [
+      "https://www.instagram.com/elevatedbeautyofficial_/",
+      "https://www.instagram.com/elevatedbyeve_/",
+      "https://www.instagram.com/elevatedbyellie_/"
+    ],
     "description": "Luxury permanent makeup, brows and lashes in Newtownards, Northern Ireland.",
     "priceRange": "££"
   }
@@ -42,14 +53,15 @@
       --ivory:#FAF7F2; --cream:#F2EDE4; --gold:#C9A96E; --gold-lt:#E8D5B0;
       --mink:#8B7355; --charcoal:#2C2C2C; --white:#FFFFFF;
       --ff-display:'Cormorant Garamond',Georgia,serif; --ff-body:'Jost',sans-serif;
+      --nav-h:90px;
     }
     html { scroll-behavior:smooth; }
     body { font-family:var(--ff-body); background:var(--ivory); color:var(--charcoal); font-size:16px; line-height:1.7; -webkit-font-smoothing:antialiased; }
+    a:focus-visible, button:focus-visible { outline:2px solid var(--gold); outline-offset:3px; }
 
     /* NAV */
-    nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(250,247,242,0.96); backdrop-filter:blur(8px); border-bottom:1px solid var(--gold-lt); padding:0 1.5rem; height:90px; display:flex; align-items:center; justify-content:space-between; }
-    .nav-logo img { height:90px; width:auto; display:block;  }
-    .footer-logo img {  }
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(250,247,242,0.96); backdrop-filter:blur(8px); border-bottom:1px solid var(--gold-lt); padding:0 1.5rem; height:var(--nav-h); display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo img { height:90px; width:auto; display:block; }
     .nav-links { display:flex; gap:2rem; list-style:none; }
     .nav-links a { font-size:0.72rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--charcoal); text-decoration:none; transition:color 0.2s; }
     .nav-links a:hover, .nav-links a.active { color:var(--gold); }
@@ -58,18 +70,17 @@
     .hamburger.open span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
     .hamburger.open span:nth-child(2) { opacity:0; }
     .hamburger.open span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
-    .mobile-menu { display:none; position:fixed; top:76px; left:0; right:0; z-index:99; background:var(--ivory); border-bottom:1px solid var(--gold-lt); padding:1.5rem 1.25rem 2rem; flex-direction:column; }
+    .mobile-menu { display:none; position:fixed; top:var(--nav-h); left:0; right:0; z-index:99; background:var(--ivory); border-bottom:1px solid var(--gold-lt); padding:1.5rem 1.25rem 2rem; flex-direction:column; }
     .mobile-menu.open { display:flex; }
     .mobile-menu a { font-size:0.85rem; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--charcoal); text-decoration:none; padding:0.9rem 0; border-bottom:1px solid var(--gold-lt); }
     .mobile-menu a:last-child { border-bottom:none; }
     .mobile-menu a:hover { color:var(--gold); }
 
     /* HERO */
-    .hero { min-height:100svh; padding-top:76px; position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+    .hero { min-height:100svh; padding-top:var(--nav-h); position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden; }
     .hero-bg { position:absolute; inset:0; background-image:url('images/hero.jpg'); background-size:cover; background-position:center top; }
     .hero-bg::after { content:''; position:absolute; inset:0; background:linear-gradient(160deg,rgba(44,44,44,0.38) 0%,rgba(44,44,44,0.18) 100%); }
     .hero-inner { position:relative; z-index:1; text-align:center; padding:2.5rem 1.5rem; max-width:700px; }
-    .hero-logo { width:min(340px,75vw); margin:0 auto 2rem; display:block; }
     .hero-eyebrow { font-size:0.68rem; font-weight:500; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold-lt); margin-bottom:1rem; }
     .hero-title { font-family:var(--ff-display); font-size:clamp(2.4rem,7vw,4.5rem); font-weight:300; line-height:1.1; color:var(--white); margin-bottom:1rem; }
     .hero-title em { font-style:italic; color:var(--gold-lt); }
@@ -77,8 +88,8 @@
     .hero-ctas { display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center; }
 
     /* BUTTONS */
-    .btn-primary { display:inline-block; background:var(--gold); color:var(--white); font-family:var(--ff-body); font-size:0.72rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; text-decoration:none; padding:0.9rem 2rem; border:1px solid var(--gold); transition:background 0.25s,color 0.25s; cursor:pointer; text-align:center; }
-    .btn-primary:hover { background:var(--mink); border-color:var(--mink); }
+    .btn-primary { display:inline-block; background:var(--gold); color:var(--white); font-family:var(--ff-body); font-size:0.72rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; text-decoration:none; padding:0.9rem 2rem; border:1px solid var(--gold); transition:background 0.25s,color 0.25s,transform 0.2s; cursor:pointer; text-align:center; }
+    .btn-primary:hover { background:var(--mink); border-color:var(--mink); transform:translateY(-1px); }
     .btn-outline-white { display:inline-block; background:transparent; color:var(--white); font-family:var(--ff-body); font-size:0.72rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; text-decoration:none; padding:0.9rem 2rem; border:1px solid rgba(255,255,255,0.6); transition:background 0.25s,color 0.25s; }
     .btn-outline-white:hover { background:rgba(255,255,255,0.12); }
     .btn-outline { display:inline-block; background:transparent; color:var(--charcoal); font-family:var(--ff-body); font-size:0.72rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; text-decoration:none; padding:0.9rem 2rem; border:1px solid var(--charcoal); transition:background 0.25s,color 0.25s; text-align:center; }
@@ -98,7 +109,8 @@
     /* ARTISTS */
     .artists-bg { background:var(--cream); }
     .artists-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
-    .artist-card { background:var(--ivory); border:1px solid var(--gold-lt); overflow:hidden; }
+    .artist-card { background:var(--ivory); border:1px solid var(--gold-lt); overflow:hidden; transition:transform 0.25s ease, box-shadow 0.25s ease; }
+    .artist-card:hover { transform:translateY(-4px); box-shadow:0 14px 40px rgba(201,169,110,0.16); }
     .artist-photo { width:100%; aspect-ratio:3/4; object-fit:cover; object-position:top; display:block; }
     .artist-card-body { padding:1.75rem 1.5rem; text-align:center; }
     .artist-name { font-family:var(--ff-display); font-size:1.5rem; font-weight:400; color:var(--charcoal); margin-bottom:0.2rem; }
@@ -107,6 +119,9 @@
     .artist-services { list-style:none; margin-bottom:1.5rem; }
     .artist-services li { font-size:0.78rem; font-weight:400; color:var(--charcoal); padding:0.4rem 0; border-bottom:1px solid var(--gold-lt); }
     .artist-services li:last-child { border-bottom:none; }
+    .artist-ig { display:inline-flex; align-items:center; gap:0.45rem; margin-top:0.9rem; font-size:0.72rem; font-weight:500; letter-spacing:0.1em; color:var(--mink); text-decoration:none; transition:color 0.2s; }
+    .artist-ig:hover { color:var(--gold); }
+    .artist-ig svg { width:16px; height:16px; }
 
     /* SERVICES */
     .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:0; }
@@ -115,7 +130,12 @@
     .service-card:hover img { transform:scale(1.04); }
     .service-overlay { position:absolute; inset:0; background:linear-gradient(0deg,rgba(44,44,44,0.72) 0%,rgba(44,44,44,0.1) 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:1.5rem; }
     .service-name { font-family:var(--ff-display); font-size:1.4rem; font-weight:300; color:var(--white); line-height:1.2; }
-    .service-tag { font-size:0.65rem; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold-lt); margin-bottom:0.3rem; }
+
+    /* REVIEWS BAND */
+    .reviews-band { background:var(--ivory); text-align:center; padding:4rem 1.25rem; }
+    .reviews-stars { font-size:1.6rem; letter-spacing:0.35rem; color:var(--gold); margin-bottom:0.6rem; }
+    .reviews-band h2 { font-family:var(--ff-display); font-size:clamp(1.6rem,4vw,2.4rem); font-weight:300; margin-bottom:0.4rem; }
+    .reviews-band p { font-size:0.85rem; font-weight:300; color:var(--mink); max-width:460px; margin:0 auto 1.75rem; }
 
     /* WHY */
     .why-bg { background:var(--charcoal); }
@@ -148,10 +168,22 @@
     .footer-logo img { height:44px; width:auto; margin:0 auto 1rem; display:block; }
     .footer-address { font-size:0.78rem; font-weight:300; color:rgba(255,255,255,0.4); margin-bottom:0.25rem; }
     .footer-email { font-size:0.78rem; font-weight:300; color:var(--gold); text-decoration:none; }
+    .footer-social { display:flex; justify-content:center; gap:1.25rem; margin-top:1.25rem; }
+    .footer-social a { color:rgba(255,255,255,0.55); transition:color 0.2s; display:inline-flex; }
+    .footer-social a:hover { color:var(--gold); }
+    .footer-social svg { width:20px; height:20px; }
     .footer-nav { display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; list-style:none; margin-top:2rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.1); }
     .footer-nav a { font-size:0.7rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s; }
     .footer-nav a:hover { color:var(--gold); }
     .footer-copy { font-size:0.68rem; color:rgba(255,255,255,0.22); margin-top:1.5rem; }
+
+    /* BACK TO TOP */
+    .to-top { position:fixed; right:1.1rem; bottom:1.1rem; z-index:90; width:42px; height:42px; border-radius:50%; border:1px solid var(--gold-lt); background:rgba(250,247,242,0.95); color:var(--mink); font-size:1rem; cursor:pointer; opacity:0; pointer-events:none; transition:opacity 0.3s, transform 0.2s; }
+    .to-top.show { opacity:1; pointer-events:auto; }
+    .to-top:hover { transform:translateY(-2px); color:var(--gold); }
+
+    /* STICKY MOBILE BOOK BAR */
+    .sticky-book { display:none; }
 
     /* MOBILE */
     @media(max-width:768px){
@@ -169,6 +201,10 @@
       .why-grid { grid-template-columns:1fr 1fr; }
       .hero-ctas { flex-direction:column; align-items:stretch; max-width:300px; margin:0 auto; }
       .btn-primary,.btn-outline-white { width:100%; }
+      .sticky-book { display:block; position:fixed; left:0; right:0; bottom:0; z-index:95; background:var(--gold); color:var(--white); text-align:center; padding:1rem 1.5rem; font-size:0.75rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; text-decoration:none; box-shadow:0 -4px 18px rgba(0,0,0,0.12); transform:translateY(110%); transition:transform 0.35s ease; }
+      .sticky-book.show { transform:translateY(0); }
+      body { padding-bottom:0; }
+      .to-top { bottom:4.4rem; }
     }
     @media(max-width:480px){
       .services-grid { grid-template-columns:1fr; }
@@ -177,6 +213,15 @@
 
     .reveal { opacity:0; transform:translateY(18px); transition:opacity 0.6s ease,transform 0.6s ease; }
     .reveal.visible { opacity:1; transform:none; }
+    .artists-grid .reveal:nth-child(2), .services-grid .reveal:nth-child(2), .why-grid .reveal:nth-child(2) { transition-delay:0.12s; }
+    .services-grid .reveal:nth-child(3), .why-grid .reveal:nth-child(3) { transition-delay:0.24s; }
+    .services-grid .reveal:nth-child(4) { transition-delay:0.36s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior:auto; }
+      .reveal { opacity:1; transform:none; transition:none; }
+      .service-card img, .artist-card, .btn-primary { transition:none; }
+    }
   </style>
 </head>
 <body>
@@ -188,7 +233,7 @@
     <li><a href="book.html">Book</a></li>
     <li><a href="academy.html">Academy</a></li>
   </ul>
-  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html">Home</a>
@@ -201,7 +246,7 @@
   <div class="hero-bg"></div>
   <div class="hero-inner">
     <p class="hero-eyebrow">Newtownards, Northern Ireland</p>
-    <h1 class="hero-title">Your Beauty, <em>Elevated</em>
+    <h1 class="hero-title">Your Beauty, <em>Elevated</em></h1>
     <p class="hero-sub">Luxury PMU, brows &amp; lashes by specialist artists Eve McClements and Ellie Meek.</p>
     <div class="hero-ctas">
       <a href="book.html" class="btn-primary">Book an Appointment</a>
@@ -219,7 +264,7 @@
     <div class="divider"><div class="divider-diamond"></div></div>
     <div class="artists-grid">
       <div class="artist-card reveal">
-        <img src="images/eve-portrait.jpg" alt="Eve McClements Permanent Makeup and brow specialist Elevated Beauty Newtownards Northern Ireland" class="artist-photo" style="object-position:top 15%" />
+        <img src="images/eve-portrait.jpg" alt="Eve McClements Permanent Makeup and brow specialist Elevated Beauty Newtownards Northern Ireland" class="artist-photo" style="object-position:center 30%" />
         <div class="artist-card-body">
           <h3 class="artist-name">Eve McClements</h3>
           <p class="artist-role">Permanent makeup  &amp; Brow Specialist</p>
@@ -228,6 +273,11 @@
             <li>Combination Brows</li><li>Powder Brows</li><li>Lamination Brows</li><li>HD Brows</li><li>Lash Lift &amp; Tint</li>
           </ul>
           <a href="https://elevatedbyeve.gettimely.com" target="_blank" rel="noopener" class="btn-primary">Book with Eve</a>
+          <br />
+          <a href="https://www.instagram.com/elevatedbyeve_/" target="_blank" rel="noopener" class="artist-ig" aria-label="Eve McClements on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1" fill="currentColor" stroke="none"/></svg>
+            @elevatedbyeve_
+          </a>
         </div>
       </div>
       <div class="artist-card reveal">
@@ -240,6 +290,11 @@
             <li>Lip Blush</li><li>Classic, Hybrid &amp; Russian Lashes</li><li>Lash Lift &amp; Tint</li><li>HD Brows</li><li>Lamination Brows</li>
           </ul>
           <a href="https://elevatedbyellie.setmore.com" target="_blank" rel="noopener" class="btn-primary">Book with Ellie</a>
+          <br />
+          <a href="https://www.instagram.com/elevatedbyellie_/" target="_blank" rel="noopener" class="artist-ig" aria-label="Ellie Meek on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1" fill="currentColor" stroke="none"/></svg>
+            @elevatedbyellie_
+          </a>
         </div>
       </div>
     </div>
@@ -251,20 +306,30 @@
   <div class="services-grid">
     <div class="service-card reveal">
       <img src="images/pmu.jpg" alt="Powder & Combination Brows" loading="lazy" />
-      <div class="service-overlay"><p class="service-name">Powder & Combination Brows</h3></div>
+      <div class="service-overlay"><p class="service-name">Powder &amp; Combination Brows</p></div>
     </div>
     <div class="service-card reveal">
       <img src="images/combo-brows.jpg" alt="Brow treatments" loading="lazy" />
-      <div class="service-overlay"><p class="service-name">Brow Treatments</h3></div>
+      <div class="service-overlay"><p class="service-name">Brow Treatments</p></div>
     </div>
     <div class="service-card reveal">
       <img src="images/lashes.jpg" alt="Lash Treatments" loading="lazy" />
-      <div class="service-overlay"><p class="service-name">Lash Treatments</h3></div>
+      <div class="service-overlay"><p class="service-name">Lash Treatments</p></div>
     </div>
     <div class="service-card reveal">
       <img src="images/lip-blush.jpg" alt="Lip blush permanent makeup Newtownards Northern Ireland Elevated Beauty" loading="lazy" />
-      <div class="service-overlay"><p class="service-name">Lip Blush</h3></div>
+      <div class="service-overlay"><p class="service-name">Lip Blush</p></div>
     </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-band">
+  <div class="section-inner reveal">
+    <div class="reviews-stars" aria-hidden="true">★★★★★</div>
+    <h2>Rated 5.0 on Google</h2>
+    <p>Our clients consistently rate Elevated Beauty five stars for results, care, and experience.</p>
+    <a href="https://www.google.com/search?q=Elevated+Beauty+Newtownards+reviews" target="_blank" rel="noopener" class="btn-outline">Read Our Reviews</a>
   </div>
 </section>
 
@@ -299,7 +364,7 @@
         </ul>
         <a href="academy.html" class="btn-outline reveal">View All Courses</a>
       </div>
-      <img src="images/eve-ellie.jpg" alt="Eve McClements and Ellie Meek beauty specialists at Elevated Beauty NI Newtownards" class="academy-img reveal" />
+      <img src="images/eve-ellie.jpg" alt="Eve McClements and Ellie Meek beauty specialists at Elevated Beauty NI Newtownards" class="academy-img reveal" loading="lazy" />
     </div>
   </div>
 </section>
@@ -312,18 +377,41 @@
   <div class="footer-logo"><img src="images/logo-transparent.png" alt="Elevated Beauty NI logo – luxury beauty studio Newtownards" /></div>
   <p class="footer-address">11a South St, Newtownards BT23 4JT</p>
   <a href="mailto:elevatedbeauty2024@gmail.com" class="footer-email">elevatedbeauty2024@gmail.com</a>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/elevatedbeautyofficial_/" target="_blank" rel="noopener" aria-label="Elevated Beauty on Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+  </div>
   <ul class="footer-nav">
     <li><a href="index.html">Home</a></li><li><a href="book.html">Book</a></li><li><a href="academy.html">Academy</a></li>
   </ul>
   <p class="footer-copy">&copy; 2025 Elevated Beauty. All rights reserved.</p>
 </footer>
 
+<a href="book.html" class="sticky-book" id="stickyBook">Book an Appointment</a>
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
 <script>
   const btn = document.getElementById('hamburger'), menu = document.getElementById('mobileMenu');
-  btn.addEventListener('click', () => { btn.classList.toggle('open'); menu.classList.toggle('open'); });
-  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { btn.classList.remove('open'); menu.classList.remove('open'); }));
+  btn.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open);
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { btn.classList.remove('open'); menu.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }));
+
   const io = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } }), { threshold:0.1 });
   document.querySelectorAll('.reveal').forEach(r => io.observe(r));
+
+  // Sticky book bar (mobile) + back to top
+  const sticky = document.getElementById('stickyBook'), toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    sticky.classList.toggle('show', y > 500);
+    toTop.classList.toggle('show', y > 700);
+  }, { passive:true });
+  toTop.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
 </script>
 </body>
 </html>
