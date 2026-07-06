@@ -8,21 +8,26 @@
   <meta name="keywords" content="beauty training Northern Ireland, brow lamination course NI, lash lift course Newtownards, PMU training NI, beauty academy Northern Ireland, elevated beauty academy" />
   <meta name="author" content="Elevated Beauty NI" />
   <link rel="canonical" href="https://www.elevatedbeautyni.co.uk/academy.html" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png" />
+  <link rel="preload" as="image" href="images/academy-hero.jpg" />
   <meta property="og:title" content="Beauty Training Academy | Elevated Beauty NI" />
   <meta property="og:description" content="Professional beauty training courses in Newtownards, Northern Ireland. Brow lamination, lash lift, PMU and more." />
   <meta property="og:url" content="https://www.elevatedbeautyni.co.uk/academy.html" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Elevated Beauty NI" />
   <meta property="og:image" content="https://www.elevatedbeautyni.co.uk/images/eve-ellie.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--ivory:#FAF7F2;--cream:#F2EDE4;--gold:#C9A96E;--gold-lt:#E8D5B0;--mink:#8B7355;--charcoal:#2C2C2C;--white:#FFFFFF;--ff-display:'Cormorant Garamond',Georgia,serif;--ff-body:'Jost',sans-serif}
+    :root{--ivory:#FAF7F2;--cream:#F2EDE4;--gold:#C9A96E;--gold-lt:#E8D5B0;--mink:#8B7355;--charcoal:#2C2C2C;--white:#FFFFFF;--ff-display:'Cormorant Garamond',Georgia,serif;--ff-body:'Jost',sans-serif;--nav-h:90px}
     html{scroll-behavior:smooth}
     body{font-family:var(--ff-body);background:var(--ivory);color:var(--charcoal);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
-    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,247,242,0.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--gold-lt);padding:0 1.5rem;height:90px;display:flex;align-items:center;justify-content:space-between}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,247,242,0.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--gold-lt);padding:0 1.5rem;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between}
     .nav-logo img{height:90px;width:auto;display:block}
     .nav-links{display:flex;gap:2rem;list-style:none}
     .nav-links a{font-size:0.72rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--charcoal);text-decoration:none;transition:color 0.2s}
@@ -32,13 +37,13 @@
     .hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
     .hamburger.open span:nth-child(2){opacity:0}
     .hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
-    .mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;z-index:99;background:var(--ivory);border-bottom:1px solid var(--gold-lt);padding:1.5rem 1.25rem 2rem;flex-direction:column}
+    .mobile-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;z-index:99;background:var(--ivory);border-bottom:1px solid var(--gold-lt);padding:1.5rem 1.25rem 2rem;flex-direction:column}
     .mobile-menu.open{display:flex}
     .mobile-menu a{font-size:0.85rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--charcoal);text-decoration:none;padding:0.9rem 0;border-bottom:1px solid var(--gold-lt)}
     .mobile-menu a:last-child{border-bottom:none}
     .mobile-menu a:hover{color:var(--gold)}
 
-    .page-hero{padding-top:76px;position:relative;overflow:hidden;min-height:400px;display:flex;align-items:flex-end}
+    .page-hero{padding-top:var(--nav-h);position:relative;overflow:hidden;min-height:400px;display:flex;align-items:flex-end}
     .page-hero-bg{position:absolute;inset:0;background-image:url('images/academy-hero.jpg');background-size:cover;background-position:center top}
     .page-hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(44,44,44,0.85) 0%,rgba(44,44,44,0.2) 100%)}
     .page-hero-inner{position:relative;z-index:1;padding:3rem 1.5rem;max-width:680px}
@@ -65,8 +70,8 @@
     .stat-label{font-size:0.68rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--mink)}
 
     .courses-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.75rem}
-    .course-card{background:var(--white);border:1px solid var(--gold-lt);display:flex;flex-direction:column;transition:transform 0.2s,box-shadow 0.2s}
-    .course-card:hover{transform:translateY(-3px);box-shadow:0 10px 35px rgba(201,169,110,0.1)}
+    .course-card{background:var(--white);border:1px solid var(--gold-lt);display:flex;flex-direction:column;transition:transform 0.25s ease,box-shadow 0.25s ease}
+    .course-card:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(201,169,110,0.16)}
     .course-card-img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center;display:block}
     .course-card-header{background:var(--charcoal);padding:1.25rem 1.75rem}
     .course-tag{font-size:0.62rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem}
@@ -78,8 +83,8 @@
     .course-includes li:last-child{border-bottom:none}
     .course-includes li::before{content:'✓';color:var(--gold);font-size:0.7rem;flex-shrink:0}
 
-    .btn-primary{display:inline-block;background:var(--gold);color:var(--white);font-family:var(--ff-body);font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;padding:0.85rem 1.5rem;border:1px solid var(--gold);transition:background 0.25s,color 0.25s;cursor:pointer;text-align:center;width:100%}
-    .btn-primary:hover{background:var(--mink);border-color:var(--mink)}
+    .btn-primary{display:inline-block;background:var(--gold);color:var(--white);font-family:var(--ff-body);font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;padding:0.85rem 1.5rem;border:1px solid var(--gold);transition:background 0.25s,color 0.25s,transform 0.2s;cursor:pointer;text-align:center;width:100%}
+    .btn-primary:hover{background:var(--mink);border-color:var(--mink);transform:translateY(-1px)}
     .btn-outline{display:inline-block;background:transparent;color:var(--charcoal);font-family:var(--ff-body);font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;padding:0.85rem 1.5rem;border:1px solid var(--charcoal);transition:background 0.25s,color 0.25s;width:100%;text-align:center}
     .btn-outline:hover{background:var(--charcoal);color:var(--white)}
 
@@ -117,10 +122,20 @@
     .footer-logo img{height:44px;width:auto;margin:0 auto 1rem;display:block}
     .footer-address{font-size:0.78rem;font-weight:300;color:rgba(255,255,255,0.4);margin-bottom:0.25rem}
     .footer-email{font-size:0.78rem;font-weight:300;color:var(--gold);text-decoration:none}
+    .footer-social{display:flex;justify-content:center;gap:1.25rem;margin-top:1.25rem}
+    .footer-social a{color:rgba(255,255,255,0.55);transition:color 0.2s;display:inline-flex}
+    .footer-social a:hover{color:var(--gold)}
+    .footer-social svg{width:20px;height:20px}
     .footer-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;list-style:none;margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1)}
     .footer-nav a{font-size:0.7rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.4);text-decoration:none;transition:color 0.2s}
     .footer-nav a:hover{color:var(--gold)}
     .footer-copy{font-size:0.68rem;color:rgba(255,255,255,0.22);margin-top:1.5rem}
+
+    .to-top{position:fixed;right:1.1rem;bottom:1.1rem;z-index:90;width:42px;height:42px;border-radius:50%;border:1px solid var(--gold-lt);background:rgba(250,247,242,0.95);color:var(--mink);font-size:1rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s,transform 0.2s}
+    .to-top.show{opacity:1;pointer-events:auto}
+    .to-top:hover{transform:translateY(-2px);color:var(--gold)}
+
+    .sticky-enquire{display:none}
 
     @media(max-width:768px){
       .nav-links{display:none}.hamburger{display:flex}
@@ -129,10 +144,23 @@
       .courses-grid{grid-template-columns:1fr}
       .why-grid{grid-template-columns:1fr 1fr}
       .popup{padding:2rem 1.25rem}
+      .sticky-enquire{display:block;position:fixed;left:0;right:0;bottom:0;z-index:95;background:var(--gold);color:var(--white);text-align:center;padding:1rem 1.5rem;font-size:0.75rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;border:none;width:100%;cursor:pointer;font-family:var(--ff-body);box-shadow:0 -4px 18px rgba(0,0,0,0.12);transform:translateY(110%);transition:transform 0.35s ease}
+      .sticky-enquire.show{transform:translateY(0)}
+      .to-top{bottom:4.4rem}
     }
     @media(max-width:480px){.why-grid{grid-template-columns:1fr}}
     .reveal{opacity:0;transform:translateY(18px);transition:opacity 0.6s ease,transform 0.6s ease}
     .reveal.visible{opacity:1;transform:none}
+    .courses-grid .reveal:nth-child(2){transition-delay:0.1s}
+    .courses-grid .reveal:nth-child(3){transition-delay:0.2s}
+    .why-grid .reveal:nth-child(2){transition-delay:0.1s}
+    .why-grid .reveal:nth-child(3){transition-delay:0.2s}
+    .why-grid .reveal:nth-child(4){transition-delay:0.3s}
+    @media (prefers-reduced-motion: reduce){
+      html{scroll-behavior:auto}
+      .reveal{opacity:1;transform:none;transition:none}
+      .course-card,.btn-primary{transition:none}
+    }
   </style>
 </head>
 <body>
@@ -141,7 +169,7 @@
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li><li><a href="book.html">Book</a></li><li><a href="academy.html" class="active">Academy</a></li>
   </ul>
-  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html">Home</a><a href="book.html">Book Appointment</a><a href="academy.html">Training Academy</a>
@@ -260,9 +288,9 @@
 
 <!-- POPUP -->
 <div class="popup-overlay" id="popupOverlay">
-  <div class="popup" role="dialog" aria-modal="true">
+  <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
     <button class="popup-close" onclick="closeEnquiry()" aria-label="Close">✕</button>
-    <h3>Course <em>Enquiry</em></h3>
+    <h3 id="popupTitle">Course <em>Enquiry</em></h3>
     <p class="popup-sub">Fill in the form and we'll be in touch to discuss your training options.</p>
     <form id="enquiryForm">
       <div class="form-row"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="Your name" required /></div>
@@ -294,22 +322,37 @@
   <div class="footer-logo"><img src="images/logo-transparent.png" alt="Elevated Beauty NI logo – luxury beauty studio Newtownards" /></div>
   <p class="footer-address">11a South St, Newtownards BT23 4JT</p>
   <a href="mailto:elevatedbeauty2024@gmail.com" class="footer-email">elevatedbeauty2024@gmail.com</a>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/elevatedbeautyofficial_/" target="_blank" rel="noopener" aria-label="Elevated Beauty on Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+  </div>
   <ul class="footer-nav"><li><a href="index.html">Home</a></li><li><a href="book.html">Book</a></li><li><a href="academy.html">Academy</a></li></ul>
   <p class="footer-copy">&copy; 2025 Elevated Beauty. All rights reserved.</p>
 </footer>
 
+<button class="sticky-enquire" id="stickyEnquire" onclick="openEnquiry('')">Enquire About a Course</button>
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
 <script>
   const btn=document.getElementById('hamburger'),menu=document.getElementById('mobileMenu');
-  btn.addEventListener('click',()=>{btn.classList.toggle('open');menu.classList.toggle('open')});
-  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{btn.classList.remove('open');menu.classList.remove('open')}));
+  btn.addEventListener('click',()=>{
+    const open=menu.classList.toggle('open');
+    btn.classList.toggle('open',open);
+    btn.setAttribute('aria-expanded',open);
+    btn.setAttribute('aria-label',open?'Close menu':'Open menu');
+  });
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{btn.classList.remove('open');menu.classList.remove('open');btn.setAttribute('aria-expanded','false')}));
 
   function openEnquiry(name){
     const overlay=document.getElementById('popupOverlay'),sel=document.getElementById('course');
     if(name){for(let i=0;i<sel.options.length;i++){if(sel.options[i].value===name){sel.selectedIndex=i;break}}}
     overlay.classList.add('open');document.body.style.overflow='hidden';
+    document.getElementById('name').focus();
   }
   function closeEnquiry(){document.getElementById('popupOverlay').classList.remove('open');document.body.style.overflow='';}
   document.getElementById('popupOverlay').addEventListener('click',function(e){if(e.target===this)closeEnquiry()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeEnquiry()});
 
   const FORMSPREE='https://formspree.io/f/mqeolybz';
   document.getElementById('enquiryForm').addEventListener('submit',async function(e){
@@ -326,6 +369,14 @@
 
   const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:0.1});
   document.querySelectorAll('.reveal').forEach(r=>io.observe(r));
+
+  const stickyE=document.getElementById('stickyEnquire'),toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',()=>{
+    const y=window.scrollY;
+    stickyE.classList.toggle('show',y>500);
+    toTop.classList.toggle('show',y>700);
+  },{passive:true});
+  toTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 </script>
 </body>
 </html>
